@@ -1,25 +1,24 @@
 import React from 'react';
 
-
+export default function List(props){
 <div>
 <ul>
-  { this.state.todoList.map(item => (
+  { props.todoList.map(item => (
     <li
       className={`complete-${item.complete.toString()}`}
       key={item._id}
     >
-      <span onClick={() => this.toggleComplete(item._id)}>
+      <span onClick={() => props.toggleComplete(item._id)}>
         {item.text}
       </span>
-      <button onClick={() => this.toggleDetails(item._id)}>
+      <button onClick={() => props.toggleDetails(item._id)}>
         Details
       </button>
-      <button onClick={() => this.deleteItem(item._id)}>
+      <button onClick={() => props.deleteItem(item._id)}>
         Delete
       </button>
     </li>
   ))}
 </ul>
 </div>
-
-export default List;
+};

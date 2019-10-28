@@ -1,9 +1,7 @@
 import React from 'react';
 
-function Form() {
-
-<section className="Form">
-
+function Form(props) {
+  return (
           <div>
             <h3>Add Item</h3>
             <form onSubmit={this.addItem}>
@@ -30,7 +28,6 @@ function Form() {
               <button>Add Item</button>
             </form>
           </div>
-        </section>
-        }
+        )};
 
         export default Form;
