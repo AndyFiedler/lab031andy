@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function List(props){
+  return (
 <div>
 <ul>
   { props.todoList.map(item => (
@@ -21,4 +22,5 @@ export default function List(props){
   ))}
 </ul>
 </div>
+  );
 };

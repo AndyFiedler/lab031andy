@@ -3,11 +3,10 @@
 import React from 'react';
 import uuid from 'uuid/v4';
 import { When } from '../if';
-import Modal from '../modal';
+import Modal from '../modal/';
 import Header from '../header';
 import Form from '../form';
 import List from '../list';
-import Details from '../details';
 import './todo.scss';
 
 class ToDo extends React.Component {
