@@ -21,3 +21,5 @@ import React from 'react';
   ))}
 </ul>
 </div>
+
+export default List;

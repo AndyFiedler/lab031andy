@@ -2,7 +2,7 @@ import React from 'react';
 
 function Form() {
 
-<section className="form">
+<section className="Form">
 
           <div>
             <h3>Add Item</h3>
