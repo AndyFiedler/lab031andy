@@ -89,14 +89,10 @@ class ToDo extends React.Component {
 
     return (
       <>
-        <header>
-          <h2>
-            There are
-            {this.state.todoList.filter( item => !item.complete ).length}
-            Items To Complete
-          </h2>
-        </header>
+    
+        <Header todoList={this.state.todoList} />
 
+        <Form addTodo={this.addItem}handleInputChange={this.handleInputChange}/>
         <section className="todo">
 
           <div>
