@@ -7,8 +7,7 @@ function List(props){
   const [page, setPage] = useState(0);
 
   const displayCompleted = useDisplayCompleted();
-  console.log(displayCompleted);
-  const list = !displayCompleted.displayCompleted ? props.todoList.todoList.filter(item => !item.complete) : props.todoList; 
+  const list = !displayCompleted.displayCompleted ? props.todoList.filter(item => !item.complete) : props.todoList; 
 
   const itemCount = useItemCount();
   const pageCount = Math.ceil(list.length / itemCount.count);

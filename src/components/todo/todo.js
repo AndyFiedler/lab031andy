@@ -7,19 +7,12 @@ import Form from '../form';
 import List from '../list';
 import './todo.scss';
 
-import useDisplayCompleted from '../../hooks/useDisplayCompleted';
-
 function ToDo () {
   const [state, setState]= useState(  {
     todoList: [],
     showDetails: false,
     details: {},
   });
-
-  const display = useDisplayCompleted();
-
-  console.log(display);
-
 
   const addItem = (item) => {
 
