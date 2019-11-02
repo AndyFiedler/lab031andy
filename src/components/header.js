@@ -1,5 +1,4 @@
 import React from 'react';
-import List from './list';
 
 export default function Header(props){
 
@@ -7,9 +6,7 @@ export default function Header(props){
     <>
       <header>
         <h2>
-          There are
-          {props.todoList.filter( item => !item.complete ).length}
-          Items To Complete
+          There are {props.todoList.filter( item => !item.complete ).length} Items To Complete
         </h2>
       </header>
       </>
